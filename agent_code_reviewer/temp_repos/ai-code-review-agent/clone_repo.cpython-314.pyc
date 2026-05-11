@@ -1,0 +1,17 @@
+def read_files(files):
+    data = []
+
+    for file_path in files:
+        try:
+            with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
+
+                data.append({
+                    "file": file_path,
+                    "code": content
+                })
+
+        except Exception as e:
+            print(f"❌ Error reading {file_path}: {e}")
+
+    return data

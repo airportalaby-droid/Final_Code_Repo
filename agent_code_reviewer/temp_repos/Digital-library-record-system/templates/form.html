@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <div class="container mt-5 p-4 bg-white shadow rounded">
+    <form   action="/"method="POST">
+        
+  <fieldset >
+    <legend>Library management</legend>
+    <div class="mb-3">
+      <label  class="form-label">name</label>
+      <input type="text" name='name'class="form-control" placeholder="enter the name">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Issue date</label>
+      <input type="date"  name="issue_date" class="form-control" placeholder=" enter book issue date">
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Return date</label>
+      <input type="date"  name="return_date" class="form-control" placeholder="submission date">
+    </div>
+   
+    <div class="mb-3">
+      <label class="form-label">Email id</label>
+      <input type="email" name="email" class="form-control" placeholder="Disabled input">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Book ID</label>
+      <input type="text"  name="book_id" class="form-control" placeholder="enter book name">
+    </div>
+     <label class="form-label" name="college">college</label>
+      <select class="form-select"  name="college"placeholder="select type of college">
+ 
+        <option>Engineering</option>
+       
+        </select>
+        <br>
+        <br>
+    
+    <div class="mb-3">
+      <label for="disabledSelect" name="department"class="form-label">Enter the department</label>
+      <select  class="form-select"name="department"placeholder="select the department">
+        <option> Computer Science and Engineering</option>
+         <option>Cyber Security</option>
+        <option>Information and Technology</option> 
+           <option>Artificial Integligence and Data Science</option>    
+        <option>Bio Medical Engineering</option>
+        <option>Civil Engneering</option>
+        <option>Agriculture Engnieering</option>
+        <option>mechanical Engineering</option>
+        <option>Electronical and communication  Engineering</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" >
+        <label class="form-check-label" >
+          all details are filled truely
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </fieldset>
+</form>
+</div>
+     
+    
+    
+</body>
+</html>

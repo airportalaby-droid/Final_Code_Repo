@@ -1,0 +1,8 @@
+tree_sitter==0.2.2
+langchain==0.0.329
+gitpython==3.1.31
+streamlit==1.30.0
+requests==2.31.0
+python-dotenv==1.1.1
+pytest==7.4.0
+PyGithub==1.78

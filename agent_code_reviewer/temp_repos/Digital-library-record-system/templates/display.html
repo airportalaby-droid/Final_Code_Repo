@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+   <table class="table table-striped-columns table-success">
+    <thead>
+        <tr>
+             <th>sin_no</th>
+              <th>Name</th>
+             <th>issue date</th>
+              <th>Return date</th>
+               <th>Email</th>
+               <th>book ID</th>
+                <th>Department</th>
+                <th>College</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+        </tr>
+        
+    </thead>
+    {% for d in forms %}
+    <tr>
+        <td>{{d.Id}}</td>
+         <td>{{d.Name}}</td>
+          <td>{{d.issue_date}}</td>
+          <td>{{d.return_date}}</td>
+          <td>{{d.Mail_id}}</td>
+          <td>{{d.book_id}}</td>
+          <td>{{d.Department}}</td>
+          <td>{{d.college}}</td>
+          <td ><a href="{{url_for('update', id=d.Id)}}" class="btn btn-warning">update</a></td>
+          <td><a href="{{url_for('delete', id=d.Id)}}" class="btn btn-danger">delete</a></td>
+
+    </tr>
+    {% endfor %}
+  
+</table>
+    
+</body>
+</html>
